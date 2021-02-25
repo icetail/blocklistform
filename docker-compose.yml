@@ -5,9 +5,9 @@ services:
       context: .
       dockerfile: .
       ports:
-      - "80:80"
+        - "80:80"
       depends_on: 
-      - "mysql"
+        - "mysql"
     mysql:
       image: "mysql:5.7"
       environment: 
