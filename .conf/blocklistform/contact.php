@@ -1,7 +1,7 @@
 <?php
 // database connection code
 // $con = mysqli_connect('localhost', 'database_user', 'database_password','database');
-define('DB_SERVER', getenv('DB_SERVER'));
+define('DB_SERVER', 'mysql');
 define('MYSQL_USER', getenv('MYSQL_USER'));
 define('MYSQL_PASSWORD', getenv('MYSQL_PASSWORD')); 
 define('MYSQL_DATABASE', getenv('MYSQL_DATABASE'));
