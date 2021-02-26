@@ -33,7 +33,7 @@ CREATE TABLE `tbl_blocklist` (
   `fldEmail` varchar(100) NOT NULL,
   `fldTelefoon` varchar(100) NOT NULL,
   `fldIpadress` varchar(500) NOT NULL,
-  `fldCallnr` int(100) NOT NULL
+  `fldCallnr` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
