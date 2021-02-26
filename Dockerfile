@@ -24,5 +24,6 @@ RUN apk -U update && \
         php7-mysqli \
         php7-pdo
 
-COPY .conf/blocklistform  /usr/share/nginx/html
+RUN rm /usr/local/apache2/htdocs/index.html
+COPY .conf/blocklistform  /usr/local/apache2/htdocs/
 EXPOSE 80
