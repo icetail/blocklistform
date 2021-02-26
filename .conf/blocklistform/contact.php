@@ -6,7 +6,7 @@ define('MYSQL_USER', getenv('MYSQL_USER'));
 define('MYSQL_PASSWORD', getenv('MYSQL_PASSWORD')); 
 define('MYSQL_DATABASE', getenv('MYSQL_DATABASE'));
 
-$link = mysqli_connect(DB_SERVER, MYSQL_USER, MYSQL_PASSWORD, MYSQL_DATABASE) or die('Failed to connect to the database, died with error:');
+$con = mysqli_connect(DB_SERVER, MYSQL_USER, MYSQL_PASSWORD, MYSQL_DATABASE) or die('Failed to connect to the database, died with error:');
 
 
 // get the post records
