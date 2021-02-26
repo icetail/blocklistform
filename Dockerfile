@@ -1,4 +1,4 @@
-FROM nginx:1.19.7-alpine
+FROM httpd:2.4.46-alpine
 LABEL maintainer="Michael van Zanten <michael.vanzanten@hu.nl>"
 
 RUN apk -U update && \
