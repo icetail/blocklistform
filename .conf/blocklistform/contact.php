@@ -1,10 +1,10 @@
 <?php
 // database connection code
 // $con = mysqli_connect('localhost', 'database_user', 'database_password','database');
-$dbsettings['DB_SERVER'] = getenv('DB_SERVER') ?: 'spotweb';
-$dbsettings['MYSQL_DATABASE'] = getenv('MYSQL_DATABASE') ?: 'spotweb';
-$dbsettings['MYSQL_USER'] = getenv('MYSQL_USER') ?: 'spotweb';
-$dbsettings['MYSQL_PASSWORD'] = getenv('MYSQL_PASSWORD') ?: 'spotweb';
+define('DB_SERVER', getenv('DB_SERVER'));
+define('MYSQL_USER', getenv('MYSQL_USER'));
+define('MYSQL_PASSWORD', getenv('MYSQL_PASSWORD')); 
+define('MYSQL_DATABASE', getenv('MYSQL_DATABASE'));
 
 $link = mysqli_connect(DB_SERVER, MYSQL_USER, MYSQL_PASSWORD, MYSQL_DATABASE) or die('Failed to connect to the database, died with error:');
 

@@ -2,6 +2,11 @@ version: '2'
 services:
   blocklistform:
     image: icetail/blocklistform
+    environment: 
+     MYSQL_ROOT_PASSWORD: 123
+      MYSQL_USER: db_blocklist
+      MYSQL_PASSWORD: db_blocklist
+      MYSQL_DATABASE: db_blocklist 
     ports:
      - "80:80"
     depends_on:
