@@ -7,7 +7,7 @@ services:
     depends_on:
     - "mysql"
   mysql:
-    image: "mysql:5.7"
+    image: "icetail/docker-mysql"
     environment:
       MYSQL_ROOT_PASSWORD: 123
       MYSQL_USER: db_blocklist
