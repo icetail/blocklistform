@@ -10,6 +10,6 @@ services:
     image: "mysql:5.7"
     environment:
       MYSQL_ROOT_PASSWORD: 123
-      MYSQL_USER: spotweb
-      MYSQL_PASSWORD: spotweb
-      MYSQL_DATABASE: spotweb
+      MYSQL_USER: db_blocklist
+      MYSQL_PASSWORD: db_blocklist
+      MYSQL_DATABASE: db_blocklist
