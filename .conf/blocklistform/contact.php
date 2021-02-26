@@ -1,16 +1,13 @@
 <?php
 // database connection code
 // $con = mysqli_connect('localhost', 'database_user', 'database_password','database');
-define('DB_SERVER', getenv('DB_SERVER'));
-define('DB_USERNAME', getenv('DB_USERNAME'));
-define('DB_PASSWORD', getenv('DB_PASSWORD')); 
-define('DB_NAME', getenv('DB_NAME'));
+define('DB_SERVER', 'mysql');
+define('MYSQL_USER', getenv('MYSQL_USER'));
+define('MYSQL_PASSWORD', getenv('MYSQL_PASSWORD')); 
+define('MYSQL_DATABASE', getenv('MYSQL_DATABASE'));
 
-$link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
+$link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME) or die('Failed to connect to the database, died with error:');
 
-if ($link === false) {
-    die ("ERROR: Could not connect. " . mysqli_connect_error());
-}
 
 // get the post records
 $txtNaam = $_POST['txtNaam'];
